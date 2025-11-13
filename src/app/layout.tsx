@@ -22,8 +22,8 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased bg-background text-foreground">
         <div className="flex">
-          <VerticalNav />
           <main className="flex-grow flex h-screen-snap">{children}</main>
+          <VerticalNav />
         </div>
         <Toaster />
       </body>
