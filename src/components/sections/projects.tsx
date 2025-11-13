@@ -39,19 +39,19 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="py-16 sm:py-24 flex flex-col items-center justify-center">
-      <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 animate-in fade-in slide-in-from-right-10 duration-800 ease-out flex-grow flex flex-col justify-center">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 animate-in fade-in slide-in-from-right-10 duration-800 ease-out flex-grow flex flex-col justify-center">
         <h2 className="text-center font-headline text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-12">
           Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project) => (
             <Card
               key={project.name}
-              className="flex flex-col bg-card hover:border-primary transition-colors duration-300"
+              className="flex flex-col bg-card hover:border-primary transition-colors duration-300 h-[450px]"
             >
               <CardHeader>
-                <CardTitle className="text-2xl font-bold">{project.name}</CardTitle>
-                <CardDescription className="pt-2 text-foreground/70">{project.description}</CardDescription>
+                <CardTitle className="text-xl font-bold">{project.name}</CardTitle>
+                <CardDescription className="pt-2 text-foreground/70 text-sm">{project.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <div className="flex flex-wrap gap-2">
