@@ -1,8 +1,6 @@
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function About() {
-  const professionalHeadshot = PlaceHolderImages.find(p => p.id === "professional-headshot");
   return (
     <section id="about" className="py-16 sm:py-24 flex flex-col items-center justify-center">
       <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 animate-in fade-in slide-in-from-right-10 duration-800 ease-out flex-grow flex flex-col justify-center">
@@ -18,16 +16,13 @@ export default function About() {
             </p>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            {professionalHeadshot && (
-              <Image
-                src={professionalHeadshot.imageUrl}
-                alt={professionalHeadshot.description}
-                data-ai-hint={professionalHeadshot.imageHint}
-                width={300}
-                height={300}
-                className="rounded-full"
-              />
-            )}
+            <Image
+              src="/images/Professional headshot1.23.png"
+              alt="Professional headshot of Hesed Anu Afolami"
+              width={300}
+              height={300}
+              className="rounded-full"
+            />
           </div>
         </div>
       </div>
