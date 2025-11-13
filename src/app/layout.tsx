@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import VerticalNav from '@/components/layout/vertical-nav';
 
 export const metadata: Metadata = {
-  title: "Hesed's Web3 Vista",
+  title: "AnuAfolami",
   description: 'A Creative Web3 Developer and Block Adoption Advocate.',
 };
 
