@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 flex flex-col items-center justify-center w-full">
+    <section id="about" className="py-12 flex flex-col items-center justify-center w-full">
       <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 animate-in fade-in slide-in-from-right-10 duration-800 ease-out flex-grow flex flex-col justify-center">
         <div className="text-center">
-          <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-12">
+          <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-10">
             About Me
           </h2>
         </div>
@@ -22,12 +22,12 @@ export default function About() {
           </div>
           <div className="text-center md:text-left">
             <p className="text-lg leading-relaxed text-foreground/80">
-              I build web experiences that blend design, blockchain, and real-world impact.
+              I’m a young, vibrant, and creative developer passionate about innovation and building impactful things. I love solving problems, experimenting with new ideas, and bridging the gap between Web2 and Web3. My goal is to drive blockchain adoption and inspire others to go big on their ideas. Every project I work on is an opportunity to create, connect, and contribute to global change.
             </p>
           </div>
         </div>
       </div>
-      <footer className="py-8 mt-16 w-full">
+      <footer className="py-6 mt-12 w-full">
         <p className="text-sm text-muted-foreground text-center">
           © 2025 Hesed Anu Afolami — Built with Next.js
         </p>
