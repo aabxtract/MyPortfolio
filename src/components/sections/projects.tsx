@@ -40,25 +40,25 @@ export default function Projects() {
   return (
     <section id="projects" className="py-12 flex flex-col items-center justify-center w-full">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 animate-in fade-in slide-in-from-right-10 duration-800 ease-out flex-grow flex flex-col justify-center">
-        <h2 className="text-center font-headline text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-8 sm:mb-12">
+        <h2 className="text-center font-headline text-2xl sm:text-4xl font-bold tracking-tight text-primary mb-6 sm:mb-12">
           Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <Card
               key={project.name}
               className="flex flex-col bg-card hover:border-primary transition-colors duration-300"
             >
               <CardHeader className="p-4">
-                <CardTitle className="text-lg font-bold">{project.name}</CardTitle>
-                <CardDescription className="pt-2 text-foreground/70 text-sm leading-relaxed">{project.description}</CardDescription>
+                <CardTitle className="text-base font-bold sm:text-lg">{project.name}</CardTitle>
+                <CardDescription className="pt-2 text-foreground/70 text-xs sm:text-sm leading-relaxed">{project.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow p-4 pt-0">
                 <div className="flex flex-wrap gap-2">
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2.5 py-0.5 bg-background border border-border rounded-full text-xs font-medium text-muted-foreground"
+                      className="px-2 py-0.5 bg-background border border-border rounded-full text-[10px] sm:text-xs font-medium text-muted-foreground"
                     >
                       {tech}
                     </span>
@@ -69,14 +69,14 @@ export default function Projects() {
                 {project.live && (
                   <Button variant="outline" asChild size="sm">
                     <a href={project.live} target="_blank" rel="noopener noreferrer">
-                      <Globe className="mr-2 h-4 w-4" /> Live
+                      <Globe className="mr-1.5 h-3 w-3 sm:mr-2 sm:h-4 sm:w-4" /> Live
                     </a>
                   </Button>
                 )}
                 {project.repo && (
                   <Button variant="outline" asChild size="sm">
                     <a href={project.repo} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" /> Repo
+                      <Github className="mr-1.5 h-3 w-3 sm:mr-2 sm:h-4 sm:w-4" /> Repo
                     </a>
                   </Button>
                 )}
