@@ -14,6 +14,10 @@ const SKILLS = [
     description: "A style sheet language used for describing the presentation of a document written in a markup language like HTML."
   },
   {
+    name: "JavaScript",
+    description: "A high-level, interpreted programming language that conforms to the ECMAScript specification."
+  },
+  {
     name: "TypeScript",
     description: "A typed superset of JavaScript that compiles to plain JavaScript, enhancing code quality and maintainability."
   },
