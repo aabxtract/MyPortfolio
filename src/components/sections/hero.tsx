@@ -22,7 +22,7 @@ export default function Hero() {
     <section id="home" className="text-center flex flex-col items-center justify-center w-full">
       <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex-grow flex flex-col justify-center">
         <h1 className="font-headline text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-primary animate-in fade-in slide-in-from-right-5 duration-1000 ease-out">
-          Hi — I’m Hesed Anu Afolami.
+          Hi - I'm Anuoluwapo Afolami.
         </h1>
         <p className="mt-6 text-lg sm:text-xl leading-8 text-foreground/80 animate-in fade-in slide-in-from-right-5 duration-1000 ease-out delay-200">
           A Creative Web3 Developer and Block Adoption Advocate.
@@ -33,7 +33,7 @@ export default function Hero() {
           </Button>
         </div>
       </div>
-      <footer className="py-8 mt-16 w-full">
+      <footer className="py-8 mt-24 w-full">
         <p className="text-sm text-muted-foreground text-center">
           © 2025 Hesed Anu Afolami — Built with Next.js
         </p>
