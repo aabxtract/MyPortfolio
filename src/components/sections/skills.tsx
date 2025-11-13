@@ -70,7 +70,7 @@ export default function Skills() {
                 )}
               >
                 <div className="text-center">
-                    <h4 className="font-bold tracking-wide text-primary text-base transition-all group-hover:text-lg group-hover:text-primary-foreground">{skill.name}</h4>
+                    <h4 className="font-bold tracking-wide text-primary text-lg transition-colors group-hover:text-primary-foreground">{skill.name}</h4>
                     <AnimatePresence>
                     {hoveredIndex === idx && (
                     <motion.div
