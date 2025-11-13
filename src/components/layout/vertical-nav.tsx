@@ -28,7 +28,7 @@ export default function VerticalNav() {
 
 
   return (
-    <nav className="fixed left-0 top-0 h-screen w-20 bg-black flex flex-col items-center justify-center z-50">
+    <nav className="fixed left-0 top-0 h-screen w-20 bg-[#0a0a0a] flex flex-col items-center justify-center z-50">
       <ul className="flex flex-col items-center justify-center space-y-10">
         {NAV_LINKS.map((link) => (
           <li key={link.href} className="group relative">
