@@ -43,29 +43,29 @@ export default function Projects() {
         <h2 className="text-center font-headline text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-12">
           Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {projects.map((project) => (
             <Card
               key={project.name}
               className="flex flex-col bg-card hover:border-primary transition-colors duration-300"
             >
-              <CardHeader>
-                <CardTitle className="text-lg sm:text-xl font-bold">{project.name}</CardTitle>
-                <CardDescription className="pt-2 text-foreground/70 text-sm">{project.description}</CardDescription>
+              <CardHeader className="p-4 sm:p-6">
+                <CardTitle className="text-lg font-bold">{project.name}</CardTitle>
+                <CardDescription className="pt-2 text-foreground/70 text-sm leading-relaxed">{project.description}</CardDescription>
               </CardHeader>
-              <CardContent className="flex-grow">
+              <CardContent className="flex-grow p-4 sm:p-6 pt-0">
                 <div className="flex flex-wrap gap-2">
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-background border border-border rounded-full text-xs font-medium text-muted-foreground"
+                      className="px-2.5 py-0.5 bg-background border border-border rounded-full text-xs font-medium text-muted-foreground"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="flex justify-end space-x-4 mt-auto pt-6">
+              <CardFooter className="flex justify-end space-x-2 sm:space-x-4 mt-auto p-4 sm:p-6 pt-0">
                 {project.live && (
                   <Button variant="outline" asChild size="sm">
                     <a href={project.live} target="_blank" rel="noopener noreferrer">
@@ -85,7 +85,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <footer className="py-6 mt-12 w-full">
+      <footer className="py-6 mt-24 w-full">
         <p className="text-sm text-muted-foreground text-center">
           © 2025 Hesed Anu Afolami — Built with Next.js
         </p>
