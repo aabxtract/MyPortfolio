@@ -47,7 +47,7 @@ export default function Projects() {
           {projects.map((project) => (
             <Card
               key={project.name}
-              className="flex flex-col bg-card hover:border-primary transition-colors duration-300 min-h-[300px] sm:min-h-[320px]"
+              className="flex flex-col bg-card hover:border-primary transition-colors duration-300"
             >
               <CardHeader>
                 <CardTitle className="text-lg sm:text-xl font-bold">{project.name}</CardTitle>
