@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
+        body: ['Poppins', 'sans-serif'],
         headline: ['"Pixelify Sans"', 'sans-serif'],
         code: ['monospace'],
       },
