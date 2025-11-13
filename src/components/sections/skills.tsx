@@ -70,14 +70,14 @@ export default function Skills() {
                 )}
               >
                 <div className="text-center">
-                    <h4 className="font-bold tracking-wide text-primary text-lg transition-colors group-hover:text-primary-foreground">{skill.name}</h4>
+                    <h4 className="font-bold tracking-wide text-primary text-lg transition-colors group-hover:text-white">{skill.name}</h4>
                     <AnimatePresence>
                     {hoveredIndex === idx && (
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0, transition: { delay: 0.1 } }}
                         exit={{ opacity: 0, y: 20 }}
-                        className="mt-2 text-sm text-primary-foreground"
+                        className="mt-2 text-sm text-white/80"
                     >
                         {skill.description}
                     </motion.div>
