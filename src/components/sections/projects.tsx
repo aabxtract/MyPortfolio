@@ -47,7 +47,7 @@ export default function Projects() {
           {projects.map((project) => (
             <Card
               key={project.name}
-              className="flex flex-col bg-card hover:border-primary transition-colors duration-300 min-h-[320px] sm:min-h-[350px]"
+              className="flex flex-col bg-card hover:border-primary transition-colors duration-300 min-h-[300px] sm:min-h-[320px]"
             >
               <CardHeader>
                 <CardTitle className="text-lg sm:text-xl font-bold">{project.name}</CardTitle>
@@ -67,14 +67,14 @@ export default function Projects() {
               </CardContent>
               <CardFooter className="flex justify-end space-x-4 mt-auto pt-6">
                 {project.live && (
-                  <Button variant="outline" asChild>
+                  <Button variant="outline" asChild size="sm">
                     <a href={project.live} target="_blank" rel="noopener noreferrer">
                       <Globe className="mr-2 h-4 w-4" /> Live
                     </a>
                   </Button>
                 )}
                 {project.repo && (
-                  <Button variant="outline" asChild>
+                  <Button variant="outline" asChild size="sm">
                     <a href={project.repo} target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" /> Repo
                     </a>
