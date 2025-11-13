@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Footer from "../layout/footer";
 
 export default function Hero() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -19,8 +20,8 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="text-center">
-      <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <section id="home" className="text-center flex flex-col items-center justify-center">
+      <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex-grow flex flex-col justify-center">
         <h1 className="font-headline text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-primary animate-in fade-in slide-in-from-right-5 duration-1000 ease-out">
           Hi — I’m Hesed Anu Afolami.
         </h1>
@@ -33,6 +34,7 @@ export default function Hero() {
           </Button>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

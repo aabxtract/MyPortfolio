@@ -1,3 +1,5 @@
+import Footer from "../layout/footer";
+
 const experiences = [
   {
     role: "Intern Web3 Developer",
@@ -17,8 +19,8 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-16 sm:py-24">
-      <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 animate-in fade-in slide-in-from-right-10 duration-800 ease-out">
+    <section id="experience" className="py-16 sm:py-24 flex flex-col items-center justify-center">
+      <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 animate-in fade-in slide-in-from-right-10 duration-800 ease-out flex-grow flex flex-col justify-center">
         <h2 className="text-center font-headline text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-12">
           Experience
         </h2>
@@ -35,6 +37,7 @@ export default function Experience() {
           </ul>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }
