@@ -29,8 +29,8 @@ export default function VerticalNav() {
 
 
   return (
-    <nav className="fixed right-0 top-0 h-screen w-20 bg-[#0a0a0a] flex flex-col items-center justify-center z-50">
-      <ul className="flex flex-col items-center justify-center space-y-10">
+    <nav className="fixed right-0 top-0 h-screen w-16 md:w-20 bg-[#0a0a0a] flex flex-col items-center justify-center z-50">
+      <ul className="flex flex-col items-center justify-center space-y-8 md:space-y-10">
         {NAV_LINKS.map((link) => (
           <li key={link.href} className="group relative">
             <a
@@ -38,8 +38,8 @@ export default function VerticalNav() {
               onClick={(e) => handleNavClick(e, link.href)}
               className="flex items-center text-white"
             >
-              <link.icon className="h-6 w-6 text-foreground/70 transition-all duration-300 group-hover:text-primary-alt group-hover:scale-125 group-hover:-translate-x-1 group-hover:opacity-100" />
-              <span className="absolute right-full mr-4 w-max origin-right scale-x-0 transform rounded-md bg-primary-alt px-3 py-1 text-sm text-white opacity-0 transition-all duration-300 ease-out group-hover:scale-x-100 group-hover:opacity-100">
+              <link.icon className="h-5 w-5 md:h-6 md:w-6 text-foreground/70 transition-all duration-300 group-hover:text-primary-alt group-hover:scale-125 group-hover:-translate-x-1 group-hover:opacity-100" />
+              <span className="absolute right-full mr-4 w-max origin-right scale-x-0 transform rounded-md bg-primary-alt px-3 py-1 text-sm text-white opacity-0 transition-all duration-300 ease-out group-hover:scale-x-100 group-hover:opacity-100 hidden md:block">
                 {link.label}
               </span>
             </a>

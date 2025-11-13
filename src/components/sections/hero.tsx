@@ -33,7 +33,7 @@ export default function Hero() {
           </Button>
         </div>
       </div>
-      <footer className="py-8 w-full mt-24">
+      <footer className="py-6 w-full mt-12">
         <p className="text-sm text-muted-foreground text-center">
           © 2025 Hesed Anu Afolami — Built with Next.js
         </p>

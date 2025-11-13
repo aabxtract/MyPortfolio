@@ -13,7 +13,7 @@ const projects = [
   {
     name: "MemeVibe",
     description:
-      "Meme Vibe is a Farcaster miniapp distributed directly in the feed that leverages the social graph in unique ways. A consumer-facing app for engaging and entertaining content.",
+      "A Farcaster mini-app for engaging content. Built with a focus on leveraging social graphs in unique ways.",
     stack: ["HTML", "CSS", "TypeScript", "Next.js"],
     repo: "https://github.com/aabxtract",
     live: null,
@@ -21,7 +21,7 @@ const projects = [
   {
     name: "Web3Nova Experience",
     description:
-      "Where I mastered blockchain development, smart contracts, and dApp engineering. Built and audited smart contracts, worked with real-world DApps and DeFi, and collaborated in a vibrant blockchain community.",
+      "Mastered blockchain development, smart contracts, and dApp engineering. Built and audited smart contracts.",
     stack: ["Solidity", "Smart Contracts", "dApp Tooling"],
     repo: null,
     live: null,
@@ -29,7 +29,7 @@ const projects = [
   {
     name: "Walure Kenya UI",
     description:
-      "UI for Walure’s new EdTech base in Kenya — designed for registration and online tech learning.",
+      "Designed the UI for Walure’s new EdTech platform in Kenya, focusing on user registration and online learning.",
     stack: ["HTML", "CSS", "JS", "Figma"],
     repo: null,
     live: null,
@@ -38,19 +38,19 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16 flex flex-col items-center justify-center w-full">
+    <section id="projects" className="py-12 flex flex-col items-center justify-center w-full">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 animate-in fade-in slide-in-from-right-10 duration-800 ease-out flex-grow flex flex-col justify-center">
         <h2 className="text-center font-headline text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-12">
           Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <Card
               key={project.name}
-              className="flex flex-col bg-card hover:border-primary transition-colors duration-300 min-h-[380px]"
+              className="flex flex-col bg-card hover:border-primary transition-colors duration-300 min-h-[320px] sm:min-h-[350px]"
             >
               <CardHeader>
-                <CardTitle className="text-xl font-bold">{project.name}</CardTitle>
+                <CardTitle className="text-lg sm:text-xl font-bold">{project.name}</CardTitle>
                 <CardDescription className="pt-2 text-foreground/70 text-sm">{project.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
@@ -85,7 +85,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <footer className="py-8 mt-16 w-full">
+      <footer className="py-6 mt-12 w-full">
         <p className="text-sm text-muted-foreground text-center">
           © 2025 Hesed Anu Afolami — Built with Next.js
         </p>

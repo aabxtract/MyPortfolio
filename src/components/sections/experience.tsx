@@ -75,7 +75,7 @@ export default function Experience() {
             ))}
           </motion.div>
         </div>
-        <footer className="mt-16 w-full py-6">
+        <footer className="mt-12 w-full py-6">
           <p className="text-center text-sm text-muted-foreground">
             © 2025 Hesed Anu Afolami — Built with Next.js
           </p>
