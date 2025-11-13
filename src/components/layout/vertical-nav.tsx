@@ -1,10 +1,11 @@
 "use client";
 
-import { Home, User, Code, Briefcase, Mail } from "lucide-react";
+import { Home, User, Code, Briefcase, Mail, Shapes } from "lucide-react";
 
 const NAV_LINKS = [
   { href: "#home", label: "Home", icon: Home },
   { href: "#about", label: "About", icon: User },
+  { href: "#skills", label: "Skills", icon: Shapes },
   { href: "#projects", label: "Projects", icon: Code },
   { href: "#experience", label: "Experience", icon: Briefcase },
   { href: "#contact", label: "Contact", icon: Mail },
