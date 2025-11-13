@@ -20,6 +20,8 @@ html {
 
     --primary: 258 92% 76%; /* #A78BFA */
     --primary-foreground: 0 0% 10%;
+    
+    --primary-alt: 244 100% 71%; /* #6C63FF */
 
     --secondary: 0 0% 15%;
     --secondary-foreground: 215 50% 95%;
@@ -91,7 +93,7 @@ html {
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 100vw;
-  height: calc(100vh - 4rem); /* 100vh minus header height */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
