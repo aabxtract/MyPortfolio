@@ -48,7 +48,10 @@ export default function Skills() {
           {SKILLS.map((skill, idx) => (
             <div
               key={skill.name}
-              className="relative group block p-2 h-full w-full"
+              className={cn(
+                "relative group block p-2 h-full w-full",
+                skill.name === 'Solidity' && 'md:col-start-2'
+              )}
               onMouseEnter={() => setHoveredIndex(idx)}
             >
               <AnimatePresence>
