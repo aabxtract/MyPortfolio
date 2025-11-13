@@ -10,20 +10,20 @@ export default function About() {
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="text-center md:text-left">
-            <p className="text-lg leading-relaxed text-foreground/80">
-              I build web experiences that blend design, blockchain, and real-world impact.
-            </p>
-          </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center md:order-1">
             <Image
               src="https://media.licdn.com/dms/image/v2/D4E03AQGmq3Ek4uvhyw/profile-displayphoto-crop_800_800/B4EZfhBnYMHgAw-/0/1751826987553?e=1764806400&v=beta&t=aDuyPAF9CO7mlivZO4AeH7FGS3fpaX7DMaBQgHwFo78"
               alt="Hesed Anu Afolami"
               width={300}
               height={300}
-              className="rounded-full object-cover"
+              className="rounded-lg object-cover"
               data-ai-hint="professional headshot"
             />
+          </div>
+          <div className="text-center md:text-left md:order-2">
+            <p className="text-lg leading-relaxed text-foreground/80">
+              I build web experiences that blend design, blockchain, and real-world impact.
+            </p>
           </div>
         </div>
       </div>
