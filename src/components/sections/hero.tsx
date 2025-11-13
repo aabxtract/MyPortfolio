@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Footer from "../layout/footer";
 
 export default function Hero() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -34,7 +33,11 @@ export default function Hero() {
           </Button>
         </div>
       </div>
-      <Footer />
+      <footer className="py-8 mt-16 w-full">
+        <p className="text-sm text-muted-foreground text-center">
+          © 2025 Hesed Anu Afolami — Built with Next.js
+        </p>
+      </footer>
     </section>
   );
 }

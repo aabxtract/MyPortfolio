@@ -1,5 +1,3 @@
-import Footer from "../layout/footer";
-
 const SKILLS = ["HTML", "CSS", "TypeScript", "Next.js", "React"];
 
 export default function Skills() {
@@ -17,7 +15,11 @@ export default function Skills() {
           ))}
         </div>
       </div>
-      <Footer />
+      <footer className="py-8 mt-16 w-full">
+        <p className="text-sm text-muted-foreground text-center">
+          © 2025 Hesed Anu Afolami — Built with Next.js
+        </p>
+      </footer>
     </section>
   );
 }

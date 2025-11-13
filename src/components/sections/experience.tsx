@@ -1,5 +1,3 @@
-import Footer from "../layout/footer";
-
 const experiences = [
   {
     role: "Intern Web3 Developer",
@@ -37,7 +35,11 @@ export default function Experience() {
           </ul>
         </div>
       </div>
-      <Footer />
+      <footer className="py-8 mt-16 w-full">
+        <p className="text-sm text-muted-foreground text-center">
+          © 2025 Hesed Anu Afolami — Built with Next.js
+        </p>
+      </footer>
     </section>
   );
 }

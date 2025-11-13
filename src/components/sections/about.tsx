@@ -11,7 +11,11 @@ export default function About() {
           I build web experiences that blend design, blockchain, and real-world impact.
         </p>
       </div>
-      <Footer />
+      <footer className="py-8 mt-16 w-full">
+        <p className="text-sm text-muted-foreground text-center">
+          © 2025 Hesed Anu Afolami — Built with Next.js
+        </p>
+      </footer>
     </section>
   );
 }

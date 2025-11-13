@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, Globe } from "lucide-react";
-import Footer from "../layout/footer";
 
 const projects = [
   {
@@ -86,7 +85,11 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <Footer />
+      <footer className="py-8 mt-16 w-full">
+        <p className="text-sm text-muted-foreground text-center">
+          © 2025 Hesed Anu Afolami — Built with Next.js
+        </p>
+      </footer>
     </section>
   );
 }

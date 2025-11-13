@@ -1,6 +1,5 @@
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Footer from "../layout/footer";
 
 const contactLinks = [
   {
@@ -48,7 +47,11 @@ export default function Contact() {
           ))}
         </div>
       </div>
-      <Footer />
+      <footer className="py-8 mt-16 w-full">
+        <p className="text-sm text-muted-foreground text-center">
+          © 2025 Hesed Anu Afolami — Built with Next.js
+        </p>
+      </footer>
     </section>
   );
 }
