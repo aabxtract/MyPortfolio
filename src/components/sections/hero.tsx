@@ -19,7 +19,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="text-center flex flex-col items-center justify-center">
+    <section id="home" className="text-center flex flex-col items-center justify-center w-full">
       <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex-grow flex flex-col justify-center">
         <h1 className="font-headline text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-primary animate-in fade-in slide-in-from-right-5 duration-1000 ease-out">
           Hi — I’m Hesed Anu Afolami.
@@ -33,7 +33,7 @@ export default function Hero() {
           </Button>
         </div>
       </div>
-      <footer className="py-8 mt-32 w-full">
+      <footer className="py-8 mt-16 w-full">
         <p className="text-sm text-muted-foreground text-center">
           © 2025 Hesed Anu Afolami — Built with Next.js
         </p>

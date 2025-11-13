@@ -38,7 +38,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16 sm:py-24 flex flex-col items-center justify-center">
+    <section id="projects" className="py-16 flex flex-col items-center justify-center w-full">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 animate-in fade-in slide-in-from-right-10 duration-800 ease-out flex-grow flex flex-col justify-center">
         <h2 className="text-center font-headline text-3xl sm:text-4xl font-bold tracking-tight text-primary mb-12">
           Projects
@@ -47,7 +47,7 @@ export default function Projects() {
           {projects.map((project) => (
             <Card
               key={project.name}
-              className="flex flex-col bg-card hover:border-primary transition-colors duration-300 h-[450px]"
+              className="flex flex-col bg-card hover:border-primary transition-colors duration-300 min-h-[380px]"
             >
               <CardHeader>
                 <CardTitle className="text-xl font-bold">{project.name}</CardTitle>
@@ -85,7 +85,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <footer className="py-8 mt-32 w-full">
+      <footer className="py-8 mt-16 w-full">
         <p className="text-sm text-muted-foreground text-center">
           © 2025 Hesed Anu Afolami — Built with Next.js
         </p>
