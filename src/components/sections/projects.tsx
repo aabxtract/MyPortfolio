@@ -30,7 +30,7 @@ const projects = [
     name: "Walure Kenya UI",
     description:
       "UI for Walure’s new EdTech base in Kenya — designed for registration and online tech learning.",
-    stack: ["HTML", "CSS", "JS"],
+    stack: ["HTML", "CSS", "JS", "Figma"],
     repo: null,
     live: null,
   },
