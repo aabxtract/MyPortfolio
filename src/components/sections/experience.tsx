@@ -48,7 +48,7 @@ export default function Experience() {
       className="flex flex-col items-center justify-center py-12 w-full"
     >
       <div className="container mx-auto flex h-full max-w-4xl flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="flex-grow w-full animate-in fade-in slide-in-from-right-10 duration-800 ease-out">
+        <div className="flex-grow w-full animate-in fade-in slide-in-from-right-10 duration-800 ease-out flex flex-col justify-center">
           <h2 className="mb-10 text-center font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">
             Experience
           </h2>
@@ -75,7 +75,7 @@ export default function Experience() {
             ))}
           </motion.div>
         </div>
-        <footer className="mt-12 w-full py-6">
+        <footer className="mt-16 w-full py-6">
           <p className="text-center text-sm text-muted-foreground">
             © 2025 Hesed Anu Afolami — Built with Next.js
           </p>
