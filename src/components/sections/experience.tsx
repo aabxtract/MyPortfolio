@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const experiences = [
   {
     role: 'Intern Web3 Developer',
@@ -15,6 +19,38 @@ const experiences = [
   },
 ];
 
+const timelineVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+const itemVariantsRight = {
+    hidden: { opacity: 0, x: 20 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
 export default function Experience() {
   return (
     <section
@@ -31,11 +67,18 @@ export default function Experience() {
             <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-border"></div>
 
             {/* Experience Items */}
-            <div className="space-y-12">
+            <motion.div 
+              className="space-y-12"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={timelineVariants}
+            >
               {experiences.map((exp, index) => (
-                <div
+                <motion.div
                   key={exp.role}
                   className="relative flex items-center justify-center"
+                  variants={index % 2 === 0 ? itemVariants : itemVariantsRight}
                 >
                   {/* Timeline Node */}
                   <div className="absolute left-1/2 h-4 w-4 -translate-x-1/2 transform rounded-full bg-primary ring-4 ring-background"></div>
@@ -59,9 +102,9 @@ export default function Experience() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
         <footer className="mt-16 w-full py-8">
