@@ -37,7 +37,7 @@ export default function VerticalNav() {
               onClick={(e) => handleNavClick(e, link.href)}
               className="flex items-center text-white"
             >
-              <link.icon className="h-6 w-6 transition-colors group-hover:text-primary-alt" />
+              <link.icon className="h-6 w-6 text-foreground/70 transition-all duration-300 group-hover:text-primary-alt group-hover:scale-110 group-hover:opacity-100" />
               <span className="absolute left-full ml-4 w-max origin-left scale-x-0 transform rounded-md bg-primary-alt px-3 py-1 text-sm text-white opacity-0 transition-all duration-300 ease-out group-hover:scale-x-100 group-hover:opacity-100">
                 {link.label}
               </span>
