@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    role: 'Intern Web3 Developer',
-    duration: 'Jan 2025 – Present',
+    role: 'Graphic Designer',
+    duration: 'Jan 2022 – Present',
+    years: '3 years',
   },
   {
     role: 'UI/UX Designer',
@@ -13,9 +14,8 @@ const experiences = [
     years: '2 years',
   },
   {
-    role: 'Graphic Designer',
-    duration: 'Jan 2022 – Present',
-    years: '3 years',
+    role: 'Intern Web3 Developer',
+    duration: 'Jan 2025 – Present',
   },
 ];
 
