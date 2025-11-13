@@ -85,7 +85,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <footer className="py-8 mt-16 w-full">
+      <footer className="py-8 mt-32 w-full">
         <p className="text-sm text-muted-foreground text-center">
           © 2025 Hesed Anu Afolami — Built with Next.js
         </p>
